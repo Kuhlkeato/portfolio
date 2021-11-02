@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/main.css">
+    <title>Projects</title>
+  </head>
+  <body>
+
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav">
+        <li><a class="nav-link active" href="/">Home</a></li>
+        <li><a class="nav-link" href="/projects/">projects</a></li>
+        <li><a class="nav-link" href="/contact/">contact</a></li>
+      </ul>
+    
+    </div>
+   </nav>
+  <div class="container">
+
+
+    <h1 class="title">Machine Learning</h1>
+
+    <p class="lead">
+    Building a lego classification Model
+    </p>
+
+    <img src="../../lego.jpg" class="img-thumbnail" style="width: 350px" alt="lego piece">
+    <img src="../../lego2.jpg" class="img-thumbnail" style="width: 350px" alt="grayscale lego">
+    <img src="../../feature.jpg" class="img-thumbnail" style="width: 350px" alt="feature map">
+    <p>From my academia I had the opportunity to take a machine learning class. We got learn about regression, model building and the theory that goes into it. To demonstrate our learning we where asked to build a 
+    supervised machine learning algorithm to classify and identify Lego pieces. To tackle this problem I first knew data cleaning would be required and formatting. I loaded all of the training model images into an 
+    array and then proceeded to change them all to grayscale as it is easier to work with pixel colors of 0-255 rather than RGB. I then changed the image structure to be presented as its numerical value. This presented 
+    the numbers as an array and I associated each array entry to its classified label. By performing a logistical regression with a multi-class perception rather the one vs all, I was able to achieve a recognition 
+    rate of 94% from the testing model. This accuracy was sufficient for the course but could be altered by introducing a soft max cost function to refine the boundaries.</p>
+
+    
+  </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
